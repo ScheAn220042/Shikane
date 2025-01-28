@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil</title>
+    <link rel="stylesheet" href="profil.css" />
+    <script src="profil.js" defer></script>
+    <link rel="shortcut icon" href="Icon-Shikane.png">
+  </head>
+
+  <body>
+    <header>
+      <h1>𝐅𝐢𝐧𝐚𝐧𝐳-Webseite</h1>
+    </header>
+
+    <main>
+      <section id="loginSection">
+        <h2>𝐀𝐧𝐦𝐞𝐥𝐝𝐞𝐧</h2>
+        <div id="loginForm">
+          <label for="username">𝐁𝐞𝐧𝐮𝐭𝐳𝐞𝐫𝐧𝐚𝐦𝐞:</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Benutzername"
+            required
+          />
+          <label for="password">𝐏𝐚𝐬𝐬𝐰𝐨𝐫𝐭:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Passwort"
+            required
+          />
+          <button onclick="login()">Anmelden</button>
+          <p id="loginMessage" class="message"></p>
+        </div>
+      </section>
+
+      <section id="profileSection" style="display: none;">
+        <h2>Profil</h2>
+        <p>Sie sind als <strong id="displayName"></strong> angemeldet.</p>
+
+        <h2>Datenschutz</h2>
+        <p>
+          Wir,Schüler der HTL Paul-Hahn nehmen den Schutz Ihrer persönlichen Daten sehr
+          ernst. Diese Datenschutzerklärung erläutert, wie wir Informationen
+          erfassen, verwenden, offenlegen und schützen.
+        </p>
+
+        <h2>Erfasste Daten</h2>
+        <p>
+          Wir erfassen keine persönlichen Informationen, wie beispielsweise
+          E-Mail-Adressen, wenn Sie unsere Website besuchen und die angebotenen
+          Dienste nutzen.
+        </p>
+
+        <h2>Verwendung Ihrer Daten</h2>
+        <p>
+          Da wir keine persönlichen Daten sammeln, verwenden wir keine
+          Informationen für jegliche Zwecke, einschließlich Marketing oder
+          Werbung.
+        </p>
+        <p> Bei Fragen können Sie uns unter : projektitpbhit@gmail.com erreichen</p>
+        <p> Instagram : itp_projekt_hit </p>
+        <p> Wir freuen uns über Ihre Nachrichten</p>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="level.html">Module</a></li>
+          <li><a href="profil.html">Profil</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

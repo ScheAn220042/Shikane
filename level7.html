@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanz App</title>
+    <link rel="stylesheet" href="level7.css">
+    <script src="level7.js" defer></script>
+    <link rel="shortcut icon" href="Icon-Shikane.png">
+</head>
+<body>
+    <header>
+        <div class="zurück">
+            <a href="level.html">Zurück zum Anfang</a>
+        </div>
+        
+    </header>
+
+    <section>
+        <h3>Level 7 / Finanzkrisen und Risikomanagement</h3>
+        <h4>Kapitel 1: </h4>
+        <div class="kapitel7">
+            
+            <ul>
+                <li>Lerne was Finanzkrise ist</li>
+                <li>Ursachen der Finanzkrise 2008 verstehen</li>
+                <li>Die Rolle der Banken lernen</li>
+                <li>Risiken und Risikomanagement verstehen</li>
+            </ul>
+        </div>
+
+        <div class="m1">
+            <p>Modul 7: Finanzkrisen und Risikomanagement</p>
+        </div>
+        <h5>Infos: </h5>
+        <div class="info">
+          <video  class="v7" width="450" height="340" controls>
+            <source src="VideoLevel7_neu.mp4" type="video/mp4">
+          </video>
+            
+        </div>
+
+        <h4>Kapitel 2: Fragen zur Finanzkrise</h4>
+
+        <div class="formular">
+            <form>
+                <p class="tlt">1.Was ist eine Finanzkrise?</p>
+                <input type="radio" id="q1-a1" name="Frage1" value="1"/> 
+                <label for="q1-a1">Eine Finanzkrise entsteht durch Spekulation, Schulden oder Blasen, die das Finanzsystem destabilisieren.</label><br>
+                <input type="radio" id="q1-a2" name="Frage1" value="0"/> 
+                <label for="q1-a2">Eine Finanzkrise tritt nur auf, wenn der Staat zu viele Steuern erhebt.</label><br>
+                <input type="radio" id="q1-a3" name="Frage1" value="0"/> 
+                <label for="q1-a3">Eine Finanzkrise entsteht nur durch natürliche Katastrophen.</label>
+
+                <p class="tlt">2.Was waren die Ursachen der Finanzkrise 2008?</p>
+                <input type="radio" id="q2-a1" name="Frage2" value="1"/> 
+                <label for="q2-a1">Sie wurde durch Immobilienblasen und Bankenprobleme ausgelöst.</label><br>
+                <input type="radio" id="q2-a2" name="Frage2" value="0"/> 
+                <label for="q2-a2">Sie entstand ausschließlich durch den Zusammenbruch der Landwirtschaft.</label><br>
+                <input type="radio" id="q2-a3" name="Frage2" value="0"/> 
+                <label for="q2-a3">Sie wurde durch fehlende Steuern auf Börsengewinne verursacht.</label>
+                
+
+                <p class="tlt">3.Welche Rolle spielen Banken bei Finanzkrisen?</p>
+                <input type="radio" id="q3-a1" name="Frage3" value="1"/> 
+                <label for="q3-a1">Sie gewähren in Krisenzeiten Kredite und beeinflussen die Stabilität des Systems.</label><br>
+                <input type="radio" id="q3-a2" name="Frage3" value="0"/> 
+                <label for="q3-a2">Banken verursachen Finanzkrisen, indem sie ausschließlich auf Bargeld verzichten.</label><br>
+                <input type="radio" id="q3-a3" name="Frage3" value="0"/> 
+                <label for="q3-a3">Banken lösen Krisen aus, indem sie keine Zinssätze festlegen.</label>
+
+
+                <p class="tlt">4.Wie funktioniert Risikomanagement?</p>
+                <input type="radio" id="q4-a1" name="Frage4" value="1"/> 
+                <label for="q4-a1">Es minimiert Verluste durch Diversifikation, Absicherung und Versicherungen.</label><br>
+                <input type="radio" id="q4-a2" name="Frage4" value="0"/> 
+                <label for="q4-a2">Es vermeidet Krisen durch die Abschaffung aller Finanzprodukte.</label><br>
+                <input type="radio" id="q4-a3" name="Frage4" value="0"/> 
+                <label for="q4-a3">Es funktioniert nur, wenn der Staat alle Banken übernimmt.</label>
+
+
+                <p class="tlt">5.Was ist ein Systemrisiko?</p>
+                <input type="radio" id="q5-a1" name="Frage5" value="1"/> 
+                <label for="q5-a1">Ein Risiko, das das gesamte Finanzsystem destabilisieren kann.</label><br>
+                <input type="radio" id="q5-a2" name="Frage5" value="0"/> 
+                <label for="q5-a2">Ein Risiko, das nur einzelne Haushalte betrifft.</label><br>
+                <input type="radio" id="q5-a3" name="Frage5" value="0"/> 
+                <label for="q5-a3">Ein Risiko, das durch den Staat selbst verursacht wird, ohne externe Faktoren.</label>
+                <br>
+                <button type="button" onclick="checkAnswers()">Überprüfen</button>
+
+            </form>
+        </div>
+
+    </section>
+
+ 
+    
+    <div id="result"></div>
+
+    <script>
+     function checkAnswers() {
+      const correctAnswers = { Frage1: "1", Frage2: "1", Frage3: "1", Frage4: "1", Frage5: "1" };
+      let score = 0;
+      let feedback = "";
+    
+      // Check all answers
+      for (const [question, correct] of Object.entries(correctAnswers)) {
+        const selected = document.querySelector(
+          `input[name="${question}"]:checked`
+        );
+    
+        if (selected) {
+          if (selected.value === correct) {
+            score++;
+            feedback += `${question}: <span style="color: green;">Richtig!</span><br>`;
+          } else {
+            feedback += `${question}: <span style="color: red;">Falsch!</span><br>`;
+          }
+        } else {
+          feedback += `${question}: <span style="color: orange;">Bitte beantworten Sie die Frage.</span><br>`;
+        }
+      }
+    
+      // Show feedback in the modal
+      const resultMessage = `Sie haben ${score} von 5 Fragen richtig beantwortet.<br><br>${feedback}`;
+      document.getElementById("modal-feedback").innerHTML = resultMessage;
+    
+      // Display the modal
+      const modal = document.getElementById("resultModal");
+      modal.style.display = "block";
+    }
+    
+    // Close modal function
+    function closeModal() {
+      const modal = document.getElementById("resultModal");
+      modal.style.display = "none";
+    }
+    </script>
+<div class="weiter">
+    <a href="level8.html"> Weiter zu Level 8 </a>
+</div>
+<div id="resultModal" class="modal">
+  <div class="modal-content">
+    <h4>Ergebnis:</h4>
+    <p id="modal-feedback"></p>
+    <button class="close-modal" onclick="closeModal()">Schließen</button>
+  </div>
+</div>
+
+</body>
+</html>

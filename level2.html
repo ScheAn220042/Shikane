@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanz App</title>
+    <link rel="stylesheet" href="level2.css">
+    <link rel="shortcut icon" href="Icon-Shikane.png">
+</head>
+<body>
+       <header>
+            <div class="zurück">
+                <a href="level.html">Zurück zum Anfang</a>
+            </div>
+          
+        </header>
+<section>
+    <h3>𝐋𝐞𝐯𝐞𝐥 𝟐 / 𝐆𝐞𝐥𝐝 𝐮𝐧𝐝 𝐆𝐞𝐥𝐝𝐩𝐨𝐥𝐢𝐭𝐢𝐤</h3>
+    <div class="kapitel2">
+        <h4>𝐊𝐚𝐩𝐢𝐭𝐞𝐥 𝟏:</h4>
+        <ul>
+            <li>𝙻𝚎𝚛𝚗𝚎 𝚠𝚊𝚜 𝙶𝚎𝚕𝚍 𝚒𝚜𝚝</li>
+            <li>𝙻𝚎𝚛𝚗𝚎 𝚠𝚒𝚎 𝙶𝚎𝚕𝚍 𝚎𝚗𝚝𝚜𝚝𝚎𝚑𝚝</li>
+            <li>𝙻𝚎𝚛𝚗𝚎 𝚎𝚝𝚠𝚊𝚜 ü𝚋𝚎𝚛 𝚍𝚒𝚎 𝚉𝚎𝚗𝚝𝚛𝚊𝚕𝚋𝚊𝚗𝚔</li>
+            <li>𝙻𝚎𝚛𝚗𝚎 𝚎𝚝𝚠𝚊𝚜 ü𝚋𝚎𝚛 𝚍𝚎𝚗 𝚉𝚒𝚗𝚜𝚜𝚊𝚝𝚣</li>
+        </ul>
+    </div>
+   
+    <div class="info">
+        <h5>𝐈𝐧𝐟𝐨𝐬:</h5>
+        <video  class="v2" width="450" height="340" controls>
+            <source src="Video_Level2.mp4" type="video/mp4">
+          </video>
+    </div>
+ 
+
+    <h4>𝐊𝐚𝐩𝐢𝐭𝐞𝐥 𝟐</h4>
+    <div class="formular">
+        <form id="quiz-form">
+            <div>
+                <p><b>1. Was ist Geld?</b></p>
+                <input type="radio" id="q1-a1" name="Frage1" value="1">
+                <label for="q1-a1">Ein Tauschmittel und Wertaufbewahrungsmittel.</label><br>
+                <input type="radio" id="q1-a2" name="Frage1" value="0">
+                <label for="q1-a2">Nur ein Wertaufbewahrungsmittel.</label><br>
+                <input type="radio" id="q1-a3" name="Frage1" value="0">
+                <label for="q1-a3">Nur ein Zahlungsmittel.</label>
+            </div>
+            <div>
+                <p><b>2. Wie entsteht Geld?</b></p>
+                <input type="radio" id="q2-a1" name="Frage2" value="1">
+                <label for="q2-a1">Durch die Kreditvergabe der Banken.</label><br>
+                <input type="radio" id="q2-a2" name="Frage2" value="0">
+                <label for="q2-a2">Durch die Druckerei der Zentralbank.</label><br>
+                <input type="radio" id="q2-a3" name="Frage2" value="0">
+                <label for="q2-a3">Geld entsteht durch den Staat.</label>
+            </div>
+            <div>
+                <p><b>3. Was ist die Aufgabe der Zentralbank?</b></p>
+                <input type="radio" id="q3-a1" name="Frage3" value="1">
+                <label for="q3-a1">Die Kontrolle der Geldmenge und Zinspolitik.</label><br>
+                <input type="radio" id="q3-a2" name="Frage3" value="0">
+                <label for="q3-a2">Die Organisation von Wahlen.</label><br>
+                <input type="radio" id="q3-a3" name="Frage3" value="0">
+                <label for="q3-a3">Die Regulierung der Banken.</label>
+            </div>
+            <div>
+                <p><b>4. Wie beeinflusst der Zinssatz die Wirtschaft?</b></p>
+                <input type="radio" id="q4-a1" name="Frage4" value="1">
+                <label for="q4-a1">Niedrige Zinsen fördern Investitionen und Konsum.</label><br>
+                <input type="radio" id="q4-a2" name="Frage4" value="0">
+                <label for="q4-a2">Hohe Zinsen fördern Investitionen und Konsum.</label><br>
+                <input type="radio" id="q4-a3" name="Frage4" value="0">
+                <label for="q4-a3">Zinssätze haben keinen Einfluss.</label>
+            </div>
+            <div>
+                <p><b>5. Was bedeutet Quantitative Easing?</b></p>
+                <input type="radio" id="q5-a1" name="Frage5" value="1">
+                <label for="q5-a1">Der Kauf von Staatsanleihen durch die Zentralbank, um die Geldmenge zu erhöhen.</label><br>
+                <input type="radio" id="q5-a2" name="Frage5" value="0">
+                <label for="q5-a2">Die Einführung neuer Banknoten.</label><br>
+                <input type="radio" id="q5-a3" name="Frage5" value="0">
+                <label for="q5-a3">Die Erhöhung der Zinsen durch die Zentralbank.</label>
+            </div>
+            <button type="button" onclick="checkAnswers()">Überprüfen</button>
+        </form>
+    </div>
+    
+
+    <div id="result"></div>
+
+</section>
+
+
+
+<script>
+   function checkAnswers() {
+      const correctAnswers = { Frage1: "1", Frage2: "1", Frage3: "1", Frage4: "1", Frage5: "1" };
+      let score = 0;
+      let feedback = "";
+    
+      // Check all answers
+      for (const [question, correct] of Object.entries(correctAnswers)) {
+        const selected = document.querySelector(
+          `input[name="${question}"]:checked`
+        );
+    
+        if (selected) {
+          if (selected.value === correct) {
+            score++;
+            feedback += `${question}: <span style="color: green;">Richtig!</span><br>`;
+          } else {
+            feedback += `${question}: <span style="color: red;">Falsch!</span><br>`;
+          }
+        } else {
+          feedback += `${question}: <span style="color: orange;">Bitte beantworten Sie die Frage.</span><br>`;
+        }
+      }
+    
+      // Show feedback in the modal
+      const resultMessage = `Sie haben ${score} von 5 Fragen richtig beantwortet.<br><br>${feedback}`;
+      document.getElementById("modal-feedback").innerHTML = resultMessage;
+    
+      // Display the modal
+      const modal = document.getElementById("resultModal");
+      modal.style.display = "block";
+    }
+    
+    // Close modal function
+    function closeModal() {
+      const modal = document.getElementById("resultModal");
+      modal.style.display = "none";
+    }
+</script>
+
+
+<div class="weiter">
+    <a href="level3.html"> Weiter zu Level 3 </a>
+</div>
+<div id="resultModal" class="modal">
+    <div class="modal-content">
+      <h4>Ergebnis:</h4>
+      <p id="modal-feedback"></p>
+      <button class="close-modal" onclick="closeModal()">Schließen</button>
+    </div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finanz App</title>
+    <link rel="stylesheet" href="level6.css" />
+    <link rel="shortcut icon" href="Icon-Shikane.png" />
+  </head>
+  <body>
+    <header>
+      <div class="zurück">
+        <a href="../level.html">Zurück zum Anfang</a>
+      </div>
+    </header>
+    <section>
+      <h3>Level 6 / Unternehmensfinanzierung und Buchhaltung</h3>
+      <h4>Kapitel 1:</h4>
+      <div class="kapitel6">
+        
+        <ul>
+          <li>Lerne was Eigenkapitel und Fremdkapital</li>
+          <li>Lerne etwas über Bilanzen</li>
+          <li>Lerne etwas über Liquidität</li>
+          <li>Lerne etwas über die Investitionsentscheidung</li>
+        </ul>
+      </div>
+
+      <div class="m1">
+        <p>𝐌𝐨𝐝𝐮𝐥 𝟔: 𝐔𝐧𝐭𝐞𝐫𝐧𝐞𝐡𝐦𝐞𝐧𝐬𝐟𝐢𝐧𝐚𝐧𝐳𝐢𝐞𝐫𝐮𝐧𝐠 𝐮𝐧𝐝 𝐁𝐮𝐜𝐡𝐡𝐚𝐥𝐭𝐮𝐧𝐠</p>
+      </div>
+
+      <h5>Infos:</h5>
+      <div class="info">
+       
+        <video  class="v6" width="450" height="340" controls>
+          <source src="VideoLevel6_neu.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <h4>𝐊𝐚𝐩𝐢𝐭𝐞𝐥 𝟐: Quiz</h4>
+      <div class="formular">
+        <form id="quizForm">
+          <p>Was ist Eigenkapital und Fremdkapital?</p>
+
+          <input type="radio" id="q1-a1" name="Frage1" value="1" /><label
+            for="q1-a1"
+            >Eigenkapital kommt von den Eigentümern und Fremdkapital sind
+            Schulden.</label
+          ><br />
+          <input type="radio" id="q1-a2" name="Frage1" value="0" /><label
+            for="q1-a2"
+            >Eigenkapital ist ein Bankdarlehen und Fremdkapital ist das Vermögen
+            eines Unternehmens.</label
+          ><br />
+          <input type="radio" id="q1-a3" name="Frage1" value="0" /><label
+            for="q1-a3"
+            >Eigenkapital ist die jährliche Rendite eines Unternehmens und
+            Fremdkapital sind nur Aktien.</label
+          >
+
+          <p>Was ist eine Bilanz?</p>
+          <input type="radio" id="q2-a1" name="Frage2" value="1" />
+          <label for="q2-a1"
+            >Eine Bilanz zeigt das Vermögen eines Unternehmens.</label
+          ><br />
+          <input type="radio" id="q2-a2" name="Frage2" value="0" />
+          <label for="q2-a2"
+            >Eine Bilanz ist eine Übersicht der Unternehmensgewinne.</label
+          ><br />
+          <input type="radio" id="q2-a3" name="Frage2" value="0" />
+          <label for="q2-a3"
+            >Eine Bilanz zeigt nur die Einnahmen eines Unternehmens.</label
+          >
+
+          <p>Was ist Liquidität?</p>
+          <input type="radio" id="q3-a1" name="Frage3" value="1" />
+          <label for="q3-a1"
+            >Liquidität misst, wie schnell ein Unternehmen Schulden begleichen
+            kann.</label
+          ><br />
+          <input type="radio" id="q3-a2" name="Frage3" value="0" />
+          <label for="q3-a2"
+            >Liquidität ist die Anzahl der aktiven Aktien eines
+            Unternehmens.</label
+          ><br />
+          <input type="radio" id="q3-a3" name="Frage3" value="0" />
+          <label for="q3-a3"
+            >Liquidität zeigt den Cashflow eines Unternehmens.</label
+          >
+
+          <p>Was ist Rentabilität?</p>
+          <input type="radio" id="q4-a1" name="Frage4" value="1" />
+          <label for="q4-a1"
+            >Rentabilität zeigt, wie profitabel ein Unternehmen ist.</label
+          ><br />
+          <input type="radio" id="q4-a2" name="Frage4" value="1" />
+          <label for="q4-a2">
+            Rentabilität ist das Maß für die Cashflow-Quote eines
+            Unternehmens.</label
+          ><br />
+          <input type="radio" id="q4-a3" name="Frage4" value="1" />
+          <label for="q4-a3"
+            >Rentabilität zeigt den Gewinn aus allen Investitionen.</label
+          >
+
+          <p>Was ist eine Investitionsentscheidung?</p>
+
+          <input type="radio" id="q5-a1" name="Frage5" value="1" />
+          <label for="q5-a1">
+            Investitionsentscheidungen basieren auf Rentabilität und zukünftigen
+            Chancen.</label
+          ><br />
+          <input type="radio" id="q5-a2" name="Frage5" value="0" />
+          <label for="q5-a2"
+            >Investitionsentscheidungen basieren nur auf der aktuellen
+            Liquidität des Unternehmens.</label
+          ><br />
+          <input type="radio" id="q5-a3" name="Frage5" value="0" />
+          <label for="q5-a3"
+            >Investitionsentscheidungen basieren nur auf dem Gewinn des letzten
+            Jahres.</label>
+            <br>
+            <button type="button" onclick="checkAnswers()">Überprüfen</button>
+       
+      </form>
+      
+      </div>
+      
+      
+    </section>
+
+   
+    <div id="result"></div>
+
+    <script>
+      function checkAnswers() {
+      const correctAnswers = { Frage1: "1", Frage2: "1", Frage3: "1", Frage4: "1", Frage5: "1" };
+      let score = 0;
+      let feedback = "";
+    
+      // Check all answers
+      for (const [question, correct] of Object.entries(correctAnswers)) {
+        const selected = document.querySelector(
+          `input[name="${question}"]:checked`
+        );
+    
+        if (selected) {
+          if (selected.value === correct) {
+            score++;
+            feedback += `${question}: <span style="color: green;">Richtig!</span><br>`;
+          } else {
+            feedback += `${question}: <span style="color: red;">Falsch!</span><br>`;
+          }
+        } else {
+          feedback += `${question}: <span style="color: orange;">Bitte beantworten Sie die Frage.</span><br>`;
+        }
+      }
+    
+      // Show feedback in the modal
+      const resultMessage = `Sie haben ${score} von 5 Fragen richtig beantwortet.<br><br>${feedback}`;
+      document.getElementById("modal-feedback").innerHTML = resultMessage;
+    
+      // Display the modal
+      const modal = document.getElementById("resultModal");
+      modal.style.display = "block";
+    }
+    
+    // Close modal function
+    function closeModal() {
+      const modal = document.getElementById("resultModal");
+      modal.style.display = "none";
+    }
+    </script>
+
+    <div class="weiter">
+      <a href="level7.html"> Weiter zu Level 7 </a>
+    </div>
+    <div id="resultModal" class="modal">
+      <div class="modal-content">
+        <h4>Ergebnis:</h4>
+        <p id="modal-feedback"></p>
+        <button class="close-modal" onclick="closeModal()">Schließen</button>
+      </div>
+    </div>
+  </body>
+</html>

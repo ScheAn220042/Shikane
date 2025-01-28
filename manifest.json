@@ -1,0 +1,10 @@
+{
+    "name": "Finanz App",
+    "short_name": "Finanz App ",
+    "theme_color": "#444343",
+    "background_color": "#444343",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+  }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finanz App - Level 4</title>
+    <link rel="stylesheet" href="level4.css" />
+    <link rel="shortcut icon" href="Icon-Shikane.png" />
+  </head>
+  <body>
+    <header>
+      <div class="zurück">
+        <a href="level.html">Zurück zum Anfang</a>
+    </div>
+    </header>
+    <section>
+      <h3>𝐋𝐞𝐯𝐞𝐥 𝟒 / 𝐈𝐧𝐯𝐞𝐬𝐭𝐢𝐭𝐢𝐨𝐧𝐞𝐧 𝐮𝐧𝐝 𝐊𝐚𝐩𝐢𝐭𝐚𝐥𝐦ä𝐫𝐤𝐭𝐞</h3>
+
+      <h4>Kapitel 2</h4>
+<div class="info">
+  <video  class="v4" width="450" height="340" controls>
+    <source src="Level4_Video.mp4" type="video/mp4">
+  </video>
+</div>
+
+      <div class="formular">
+        <form>
+          <p>Was ist eine Aktie?</p>
+          <input type="radio" id="q1-a1" name="Frage1" value="1" />
+          <label for="q1-a1">
+            Ein Anteil an einem Unternehmen, der an Börsen gehandelt
+            wird.</label
+          ><br />
+          <input type="radio" id="q1-a2" name="Frage1" value="0" />
+          <label for="q1-a2"> Eine staatliche Anleihe.</label><br />
+          <input type="radio" id="q1-a3" name="Frage1" value="0" />
+          <label for="q1-a3"> Ein Sparvertrag bei einer Bank.</label>
+
+          <p>Welche Arten von Wertpapieren gibt es?</p>
+          <input type="radio" id="q2-a1" name="Frage2" value="1" />
+          <label for="q2-a1">Aktien, Anleihen und Fonds.</label><br />
+          <input type="radio" id="q2-a2" name="Frage2" value="0" />
+          <label for="q2-a2">Nur Aktien.</label><br />
+          <input type="radio" id="q2-a3" name="Frage2" value="0" />
+          <label for="q2-a3">Nur Anleihen und Immobilien.</label>
+
+          <p>Was ist das Risiko-Rendite-Verhältnis?</p>
+          <input type="radio" id="q3-a1" name="Frage3" value="1" />
+          <label for="q3-a1">
+            Höhere Risiken führen oft zu höheren möglichen Renditen.</label
+          ><br />
+          <input type="radio" id="q3-a2" name="Frage3" value="0" />
+          <label for="q3-a2">Es bedeutet, dass alle Anlagen sicher sind.</label
+          ><br />
+          <input type="radio" id="q3-a3" name="Frage3" value="0" />
+          <label for="q3-a3"
+            >Es zeigt, dass Renditen unabhängig vom Risiko sind.</label
+          >
+
+          <p>Was beeinflusst Aktienkurse?</p>
+          <input type="radio" id="q4-a1" name="Frage4" value="1" />
+          <label for="q4-a1"
+            >Unternehmensgewinne, Zinssätze und wirtschaftliche Lage.</label
+          ><br />
+          <input type="radio" id="q4-a2" name="Frage4" value="0" />
+          <label for="q4-a2">Nur die Inflation.</label><br />
+          <input type="radio" id="q4-a3" name="Frage4" value="0" />
+          <label for="q4-a3">Nur die Entscheidungen der Zentralbanken.</label>
+
+          <p>Wie funktionieren Investmentfonds?</p>
+          <input type="radio" id="q5-a1" name="Frage5" value="1" />
+          <label for="q5-a1"
+            >Sie bündeln Kapital vieler Anleger und investieren in
+            unterschiedliche Anlagen.</label
+          ><br />
+          <input type="radio" id="q5-a2" name="Frage5" value="0" />
+          <label for="q5-a2"
+            >Sie sind nur für institutionelle Anleger zugänglich.</label
+          ><br />
+          <input type="radio" id="q5-a3" name="Frage5" value="0" />
+          <label for="q5-a3">Sie investieren nur in Immobilien.</label>
+          <br>
+         <button type="button" onclick="checkAnswers()">Überprüfen</button>
+        </form>
+      </div>
+    </section>
+
+
+   
+    <div class="weiter">
+    <a href="level5.html">Weiter zu Level 5</a>
+  </div>
+    <script>
+       
+       function checkAnswers() {
+      const correctAnswers = { Frage1: "1", Frage2: "1", Frage3: "1", Frage4: "1", Frage5: "1" };
+      let score = 0;
+      let feedback = "";
+    
+      // Check all answers
+      for (const [question, correct] of Object.entries(correctAnswers)) {
+        const selected = document.querySelector(
+          `input[name="${question}"]:checked`
+        );
+    
+        if (selected) {
+          if (selected.value === correct) {
+            score++;
+            feedback += `${question}: <span style="color: green;">Richtig!</span><br>`;
+          } else {
+            feedback += `${question}: <span style="color: red;">Falsch!</span><br>`;
+          }
+        } else {
+          feedback += `${question}: <span style="color: orange;">Bitte beantworten Sie die Frage.</span><br>`;
+        }
+      }
+    
+      // Show feedback in the modal
+      const resultMessage = `Sie haben ${score} von 5 Fragen richtig beantwortet.<br><br>${feedback}`;
+      document.getElementById("modal-feedback").innerHTML = resultMessage;
+    
+      // Display the modal
+      const modal = document.getElementById("resultModal");
+      modal.style.display = "block";
+    }
+    
+    // Close modal function
+    function closeModal() {
+      const modal = document.getElementById("resultModal");
+      modal.style.display = "none";
+    }
+      </script>
+      <div id="resultModal" class="modal">
+        <div class="modal-content">
+          <h4>Ergebnis:</h4>
+          <p id="modal-feedback"></p>
+          <button class="close-modal" onclick="closeModal()">Schließen</button>
+        </div>
+      </div>
+  </body>
+</html>
